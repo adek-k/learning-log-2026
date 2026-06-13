@@ -1,5 +1,5 @@
 ```markdown
-# SQL Day 2 Summary
+# SQL Day 1 Summary
 
 ## Topic
 

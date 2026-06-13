@@ -1,0 +1,10 @@
+-- Task 1: Show total spend by supplier.
+-- Task 2: Show total number of orders by supplier.
+-- Task 3: Show average order value by supplier.
+-- Task 4: Show average actual lead time by supplier.
+-- Task 5: Count late orders by supplier.
+-- Task 6: Calculate late order rate percentage by supplier.
+-- Task 7: Calculate total savings by supplier.
+-- Task 8: Rank suppliers by total spend.
+-- Task 9: Identify suppliers with high spend and high late delivery rate.
+-- Task 10: Create a supplier performance summary using spend, savings, lead time, and delivery risk.

@@ -1,0 +1,10 @@
+-- Task 1: Show total spend by category.
+-- Task 2: Show number of purchase orders by category.
+-- Task 3: Show average order value by category.
+-- Task 4: Show total savings by category.
+-- Task 5: Show average savings percentage by category.
+-- Task 6: Show average lead time by category.
+-- Task 7: Show late order rate by category.
+-- Task 8: Identify categories with high spend and high delivery risk.
+-- Task 9: Calculate each category's share of total company spend.
+-- Task 10: Write a short business summary explaining which categories require procurement attention.

@@ -1,0 +1,10 @@
+-- Task 1: Calculate total company spend.
+-- Task 2: Calculate total number of purchase orders.
+-- Task 3: Calculate average purchase order value.
+-- Task 4: Calculate total negotiated savings.
+-- Task 5: Calculate average savings percentage.
+-- Task 6: Calculate average expected lead time.
+-- Task 7: Calculate average actual lead time.
+-- Task 8: Count late purchase orders.
+-- Task 9: Calculate late order rate as a percentage.
+-- Task 10: Create a one-row KPI summary for procurement management.
