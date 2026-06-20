@@ -8,7 +8,7 @@ select
 round(sum(
 	case
 		when po.currency = 'EUR' then (po.quantity * po.unit_price) * 4.235
-		when po.currency = 'USD' then (po.quantity * po.unit_price) * 3.67
+		when po.currency = 'GBP' then (po.quantity * po.unit_price) * 4.97
 		else po.quantity * po.unit_price 
 	end
 ),2) as company_spend
@@ -23,7 +23,7 @@ select
 round(avg(
 	case
 		when po.currency = 'EUR' then (po.quantity * po.unit_price) * 4.235
-		when po.currency = 'USD' then (po.quantity * po.unit_price) * 3.67
+		when po.currency = 'GBP' then (po.quantity * po.unit_price) * 4.97
 		else po.quantity * po.unit_price 
 	end
 ),2) as average_po_value
@@ -34,12 +34,12 @@ with savings as (
 select po.order_id, 
 	case
 		when po.currency = 'EUR' then (po.quantity * po.negotiated_unit_price) * 4.235
-		when po.currency = 'USD' then (po.quantity * po.negotiated_unit_price) * 3.67
+		when po.currency = 'GBP' then (po.quantity * po.negotiated_unit_price) * 4.97
 		else po.quantity * po.negotiated_unit_price
 	end as po_value_post_negotiation,
 	case
 		when po.currency = 'EUR' then (po.quantity * po.original_unit_price) * 4.235
-		when po.currency = 'USD' then (po.quantity * po.original_unit_price) * 3.67
+		when po.currency = 'GBP' then (po.quantity * po.original_unit_price) * 4.97
 		else po.quantity * po.original_unit_price 
 	end as po_value_pre_negotiation
 from purchase_orders po
@@ -52,12 +52,12 @@ with savings as (
 select po.order_id, 
 	case
 		when po.currency = 'EUR' then (po.quantity * po.negotiated_unit_price) * 4.235
-		when po.currency = 'USD' then (po.quantity * po.negotiated_unit_price) * 3.67
+		when po.currency = 'GBP' then (po.quantity * po.negotiated_unit_price) * 4.97
 		else po.quantity * po.negotiated_unit_price
 	end as po_value_post_negotiation,
 	case
 		when po.currency = 'EUR' then (po.quantity * po.original_unit_price) * 4.235
-		when po.currency = 'USD' then (po.quantity * po.original_unit_price) * 3.67
+		when po.currency = 'GBP' then (po.quantity * po.original_unit_price) * 4.97
 		else po.quantity * po.original_unit_price 
 	end as po_value_pre_negotiation
 from purchase_orders po
@@ -107,12 +107,12 @@ with kpi_base as (
         po.actual_lead_time_days,
         case
             when po.currency = 'EUR' then (po.quantity * po.unit_price) * 4.235
-            when po.currency = 'USD' then (po.quantity * po.unit_price) * 3.67
+            when po.currency = 'GBP' then (po.quantity * po.unit_price) * 4.97
             else po.quantity * po.unit_price
         end as po_value_pln,
         case
             when po.currency = 'EUR' then (po.quantity * po.original_unit_price) * 4.235
-            when po.currency = 'USD' then (po.quantity * po.original_unit_price) * 3.67
+            when po.currency = 'GBP' then (po.quantity * po.original_unit_price) * 4.97
             else po.quantity * po.original_unit_price
         end as original_po_value_pln
     from purchase_orders po
