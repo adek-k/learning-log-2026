@@ -1,0 +1,14 @@
+-- Task 1: Create a CTE called fx_rates.
+-- Task 2: Create a CTE called order_values that calculates order value and savings in PLN.
+-- Task 3: Create a CTE called supplier_kpis using LEFT JOIN.
+-- Task 4: Calculate total_orders per supplier.
+-- Task 5: Calculate total_supplier_spend_pln.
+-- Task 6: Calculate average_order_value_pln.
+-- Task 7: Calculate total_supplier_savings_pln.
+-- Task 8: Calculate average_actual_lead_time.
+-- Task 9: Calculate late_order_count.
+-- Task 10: Calculate late_order_rate_pct.
+-- Task 11: Add supplier_activity_status: "Active" or "Inactive".
+-- Task 12: Add supplier_risk_level based on spend and late order rate.
+-- Task 13: Sort suppliers by risk level and total spend.
+-- Task 14: Write a short business summary explaining which suppliers should be reviewed first.
